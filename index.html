@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Tienda Sport</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>TIENDA SPORT</h1> 
+    <p class="bannerHeader"> Tienda online de <strong>prendas deportivas</strong> para todas las actividades físicas 🚶🏼‍♂️🏃🏼‍♀️🚴🏼‍♂️🏊🏼‍♂️🤽🏼‍♀️🤾🏼‍♂️🏋🏼‍♀️🤸🏼‍♂️</p>
+    <!-- FIGURAS DE EJEMPLO-->
+    <div id="rayo"></div>
+<!-- CODIGO ANTIGUO -->
+    <h3>CATEGORÍAS:</h3>
+        <details><summary>FITNESS 🚴‍♀️🏋️‍♂️🤸‍♂️</summary>
+            <ul>
+                <li><span class="title">Accesorios para Bici</span></li>
+                <li>Entrenamiento en Casa</li>
+                <li>Prendas Deportivas</li>
+            </ul></details>
+        <br>
+        <details><summary>MASCOTAS 🧼🐶🥎</summary>
+            <ul>
+                <li>Accesorios</li>
+                <li><span class="title">Aseo & Salud</span></li>
+                <li>Juguetes</li>
+            </ul></details>
+        <br>
+        <details><summary>VARIEDADES 🔮🎁🔞</summary>
+            <ul>
+                <li>Coleccionables</li>
+                <li>Decoración</li>
+                <li><span id="title">Smoke Shop</span></li>
+            </ul></details>
+    <!-- TERMINA AQUI -->
+    <h2>Categorías Principales:</h2> 
+    <nav class="menu">
+      <!-- CATEGORÍAS CON INPUT DE SELECCIÓN ÚNICA -->
+      <input type="radio" name="seleccion" class="seleccion" id="masculina"/>
+      <label for="masculina"><b>Ropa</b> <u>deportiva</u> <i>Masculina</i></label>
+      <br>
+      <input type="radio" name="seleccion" class="seleccion" id="femenina"/>
+      <label for="femenina"><b>Ropa</b> <u>deportiva</u> <i>Femenina</i></label>
+      <br>
+      <input type="radio" name="seleccion" class="seleccion" id="kids"/>
+      <label for="kids"><b>Ropa</b> <u>deportiva</u> <i>Kids</i></label>
+    </nav>
+    <br>
+    <!-- FOTOS DEL HOME -->
+    <img class="imgRopaCasual" src="https://www.backseries.com/wp-content/uploads/Ropa-sport-en-rebajas-portada-720x420.jpg"/>
+    <img class="imgRopaAltoRendimiento" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/03/156047-ropa-deportiva-inteligente.jpg"/>
+    <br>
+    <!-- BOTONES QUE CAMBIAN LAS IMAGENES DEL HOME Y SU PROPIO TEXTO -->
+    <button onClick="ropaSport()" id="ropaSport">Comprar Ropa Sport Casual</button>
+    <button onClick="altoRendimiento()" id="altoRendimiento">Comprar Ropa de Alto Rendimiento</button>
+    <ul>Seleccione el color de la prenda  <input type="color"/></ul>
+    <br>
+    <button onClick="numeroItems()" class="numeroItems">¿Cuántas categorías hay?</button> <p class="result"></p>
+    <!-- INPUT DE DATOS -->
+    <h2>Ingresa los datos de Envío:</h2>
+    <label>Correo</label>
+    <input id="datoMail" type="email" value="@email.com">
+    <label>Lugar de entrega</label>
+    <input id="datoDir" type="text" placeholder="dirección">
+    <label>Núm de contácto</label>
+    <input id="datoCel" type="tel" placeholder="celular">
+    <button id="buttonRegistro" onclick="registro()">Registrar</button> 
+    <br>
+    <h2>Fecha y hora de entrega:</h2> 
+    <input id="datoFecha" type="date">
+    <input id="datoHora" type="time">
+    <p id="pMail"></p> <p id="pDir"></p> <p id="pCel"></p> <p id="pFecha"></p> <p id="pHora"></p> <p id="pDatos"></p>
+    
+    <h2>Datos adicionales:</h2>
+    <textarea id="datosAdicionales" rows="3" cols="40" placeholder="Escribe aquí tus datos adicionales:"></textarea>
+    <br>
+    <button onclick="agregar()">Agregar</button>
+    <script src="script.js"></script>
+  </body>
+</html>
