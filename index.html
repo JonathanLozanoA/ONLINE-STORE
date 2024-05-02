@@ -2,40 +2,36 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
-    <title>Tienda Sport</title>
+    <title>Tienda Online | Ropa Sport</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>TIENDA SPORT</h1> 
-    <p class="bannerHeader"> Tienda online de <strong>prendas deportivas</strong> para todas las actividades físicas 🚶🏼‍♂️🏃🏼‍♀️🚴🏼‍♂️🏊🏼‍♂️🤽🏼‍♀️🤾🏼‍♂️🏋🏼‍♀️🤸🏼‍♂️</p>
+    <h1>TIENDA SPORT <br> 🚶🏼🏃🏼‍♀️🚴🏼‍♂️🏊🏼‍♂️🤾🏼‍♂️🏋🏼‍♀️🤸🏼‍♂️</h1> 
+    <!-- BANNER PRINCIPAL -->
+    <p class="bannerHeader"> Tienda online de <strong>prendas y accesorios deportivos</strong> para todos los niveles y actividades físicas.</p>
+    
     <!-- FIGURAS DE EJEMPLO-->
     <div id="rayo"></div>
-<!-- CODIGO ANTIGUO -->
-    <h3>CATEGORÍAS:</h3>
-        <details><summary>FITNESS 🚴‍♀️🏋️‍♂️🤸‍♂️</summary>
+    
+    <!-- CODIGO ANTIGUO CON (SUMMARY) PARA CATEGORÍAS-->
+    <h3>LO QUE TENEMOS PARA TI:</h3>
+        <details><summary>PRENDAS FIT 🤾🏼‍♀️🚴🤸‍♂️</summary>
             <ul>
-                <li><span class="title">Accesorios para Bici</span></li>
-                <li>Entrenamiento en Casa</li>
-                <li>Prendas Deportivas</li>
+                <li>Chaquetas deportivas</li>
+                <li>Licras para Hombres</li>
+                <li>Licras para Mujeres</li>
             </ul></details>
         <br>
-        <details><summary>MASCOTAS 🧼🐶🥎</summary>
+        <details><summary>ACCESORIOS 🧦👓🧤</summary>
             <ul>
-                <li>Accesorios</li>
-                <li><span class="title">Aseo & Salud</span></li>
-                <li>Juguetes</li>
+                <li>Accesorios Fit</li>
+                <li>Aseo & Salud</li>
+                <li>Gadgets deportivos</li>
             </ul></details>
-        <br>
-        <details><summary>VARIEDADES 🔮🎁🔞</summary>
-            <ul>
-                <li>Coleccionables</li>
-                <li>Decoración</li>
-                <li><span id="title">Smoke Shop</span></li>
-            </ul></details>
-    <!-- TERMINA AQUI -->
+
+    <!-- CODIGO PARA CATEGORÍAS CON INPUT DE SELECCIÓN ÚNICA -->
     <h2>Categorías Principales:</h2> 
     <nav class="menu">
-      <!-- CATEGORÍAS CON INPUT DE SELECCIÓN ÚNICA -->
       <input type="radio" name="seleccion" class="seleccion" id="masculina"/>
       <label for="masculina"><b>Ropa</b> <u>deportiva</u> <i>Masculina</i></label>
       <br>
@@ -46,17 +42,20 @@
       <label for="kids"><b>Ropa</b> <u>deportiva</u> <i>Kids</i></label>
     </nav>
     <br>
-    <!-- FOTOS DEL HOME -->
+    
+    <!-- FOTOS DEL HOME / CAMBIARLAS POR LAS GENERADAS POR IA.-->
     <img class="imgRopaCasual" src="https://www.backseries.com/wp-content/uploads/Ropa-sport-en-rebajas-portada-720x420.jpg"/>
     <img class="imgRopaAltoRendimiento" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/03/156047-ropa-deportiva-inteligente.jpg"/>
     <br>
+
     <!-- BOTONES QUE CAMBIAN LAS IMAGENES DEL HOME Y SU PROPIO TEXTO -->
     <button onClick="ropaSport()" id="ropaSport">Comprar Ropa Sport Casual</button>
     <button onClick="altoRendimiento()" id="altoRendimiento">Comprar Ropa de Alto Rendimiento</button>
     <ul>Seleccione el color de la prenda  <input type="color"/></ul>
     <br>
     <button onClick="numeroItems()" class="numeroItems">¿Cuántas categorías hay?</button> <p class="result"></p>
-    <!-- INPUT DE DATOS -->
+    
+    <!-- INPUT PARA TOMA DE DATOS -->
     <h2>Ingresa los datos de Envío:</h2>
     <label>Correo</label>
     <input id="datoMail" type="email" value="@email.com">
