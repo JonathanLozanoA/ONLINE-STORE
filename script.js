@@ -16,11 +16,11 @@ function altoRendimiento() {
   el.src = "https://estaticos-cdn.prensaiberica.es/clip/34c86ea8-c1b3-4d13-a7fc-a1b5ee320dd7_alta-libre-aspect-ratio_default_0.jpg";
 } 
 
-//FUNCIÓN PARA SABER EL NUMERO DE CATEGORÍA DEL HOME
+//FUNCIÓN PARA SABER EL NUMERO DE CATEGORÍA DISPONIBLES
 function numeroItems() {
   let numEl = document.getElementsByClassName("seleccion");
   let resultP = document.querySelector("p.result");
-  resultP.innerHTML = numEl.length + " Categorías de ropa deportiva";
+  resultP.innerHTML = "Hay " + numEl.length + " Categorías entre ropa deportiva y accesorios";
 }  
 
 //FUNCIÓN PARA IMPRIMIR EN PANTALLA LOS DATOS INGRESADOS POR USUARIO 

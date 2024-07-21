@@ -5,8 +5,8 @@
     <title>Tienda Online | Ropa Sport</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
     <h1>TIENDA SPORT <br> 🚶🏼🏃🏼‍♀️🚴🏼‍♂️🏊🏼‍♂️🤾🏼‍♂️🏋🏼‍♀️🤸🏼‍♂️</h1> 
+    
     <!-- BANNER PRINCIPAL -->
     <p class="bannerHeader"> Tienda online de <strong>prendas y accesorios deportivos</strong> para todos los niveles y actividades físicas.</p>
     
@@ -14,33 +14,34 @@
     <div id="rayo"></div>
     
     <!-- CODIGO ANTIGUO CON (SUMMARY) PARA CATEGORÍAS-->
-    <h3>LO QUE TENEMOS PARA TI:</h3>
-        <details><summary>PRENDAS FIT 🤾🏼‍♀️🚴🤸‍♂️</summary>
-            <ul>
-                <li>Chaquetas deportivas</li>
-                <li>Licras para Hombres</li>
-                <li>Licras para Mujeres</li>
-            </ul></details>
-        <br>
-        <details><summary>ACCESORIOS 🧦👓🧤</summary>
-            <ul>
-                <li>Accesorios Fit</li>
-                <li>Aseo & Salud</li>
-                <li>Gadgets deportivos</li>
-            </ul></details>
-
-    <!-- CODIGO PARA CATEGORÍAS CON INPUT DE SELECCIÓN ÚNICA -->
-    <h2>Categorías Principales:</h2> 
-    <nav class="menu">
-      <input type="radio" name="seleccion" class="seleccion" id="masculina"/>
-      <label for="masculina"><b>Ropa</b> <u>deportiva</u> <i>Masculina</i></label>
-      <br>
-      <input type="radio" name="seleccion" class="seleccion" id="femenina"/>
-      <label for="femenina"><b>Ropa</b> <u>deportiva</u> <i>Femenina</i></label>
-      <br>
-      <input type="radio" name="seleccion" class="seleccion" id="kids"/>
-      <label for="kids"><b>Ropa</b> <u>deportiva</u> <i>Kids</i></label>
-    </nav>
+    <h4>LO QUE TENEMOS PARA TI:</h4>
+      <details><summary>PRENDAS FIT 🤾🏼‍♀️🚴🤸‍♂️</summary>
+        <nav class="menu">
+        <ul>
+          <input type="radio" name="seleccion" class="seleccion" id="chaquetas"/>
+          <label for="chaquetas"><u>Chaquetas Deportivas</u></label>
+          <br>
+          <input type="radio" name="seleccion" class="seleccion" id="hombres"/>
+          <label for="hombres"><u>Licras para Hombres</u></label>
+          <br>
+          <input type="radio" name="seleccion" class="seleccion" id="mujeres"/>
+          <label for="mujeres"><u>Licras para Mujeres</u></label>
+        </ul></details>
+        </nav>
+    <br>
+      <details><summary>ACCESORIOS 🧦👓🧤</summary>
+        <nav class="menu">   
+        <ul>
+          <input type="radio" name="seleccion2" class="seleccion" id="accesorios"/>
+          <label for="accesorios"><u>Accesorios Fit</u></label>
+          <br>
+          <input type="radio" name="seleccion2" class="seleccion" id="aseo"/>
+          <label for="aseo"><u>Aseo & Salud</u></label>
+          <br>
+          <input type="radio" name="seleccion2" class="seleccion" id="gadgets"/>
+          <label for="gadgets"><u>Gadgets Deportivos</u></label>
+        </ul></details>
+        </nav>
     <br>
     
     <!-- FOTOS DEL HOME / CAMBIARLAS POR LAS GENERADAS POR IA.-->
@@ -53,7 +54,9 @@
     <button onClick="altoRendimiento()" id="altoRendimiento">Comprar Ropa de Alto Rendimiento</button>
     <ul>Seleccione el color de la prenda  <input type="color"/></ul>
     <br>
-    <button onClick="numeroItems()" class="numeroItems">¿Cuántas categorías hay?</button> <p class="result"></p>
+    <!-- ¿CUÁNTES CATEGORÍAS HAY? -->
+    <button onClick="numeroItems()" class="numeroItems">¿Cuántas categorías hay?</button> 
+    <p class="result"></p>
     
     <!-- INPUT PARA TOMA DE DATOS -->
     <h2>Ingresa los datos de Envío:</h2>
