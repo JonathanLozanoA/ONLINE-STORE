@@ -34,23 +34,48 @@ p {
   width: 480px;
   height: 25px;
 }
+
+.figure1{
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 375px;
+  margin: left;
+}
+
+.figure2{
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 375px;
+  margin: right;
+}
   
 img {
-  margin: 15px 0 15px 0;
+  margin: 5px 0 5px 0;
 }
 
 .imgRopaCasual {
   border: solid 2px;
-  border-radius: 10px 100px 10px 100px;
+  border-radius: 100px 10px 10px 10px;
   width: 375px;
   height: 250px;
 }
 
 .imgRopaAltoRendimiento {
   border: solid 2px;
-  border-radius: 100px 10px 100px 10px;
+  border-radius: 10px 100px 10px 10px;
   width: 375px;
   height: 250px;
+}
+
+figcaption{
+  background-color: #222;
+  color: #fff;
+  font: smaller sans-serif;
+  border-radius: 5px 5px 5px 5px;
+  padding: 3px;
+  text-align: center;
 }
 
 #rayo {
