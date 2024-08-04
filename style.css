@@ -1,27 +1,30 @@
 body {
     background-color: #9bd9f882;
-    font-family: Helvetica;
+    font-family: Verdana;
 }
   
 h1 {
-  text-align: left;
+  text-align: center;
+  font-family: verdana;
   margin: 15px 0 15px 0;
-  color: #31363F;
+  color: #06368f;
   font-size: 70px;
 }
-  
+
 .bannerHeader {
-  margin: 15px 0 15px 0;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  font-family: verdana;
   text-align: center;
-  border: solid 2px black;
+  border: solid 3px black;
   border-radius: 50px;
   color: #DFF5FF;
   background-color: #30bc30;
-  font-size: 21px;
-  width: 920px;
-  height: 30px;
+  font-size: 24px;
+  width: 1000px;
+  height: 35px;
 }
-  
+
 p {
   margin: 15px 0 15px 0;
   text-align: center;
@@ -33,6 +36,18 @@ p {
   font-style: italic;
   width: 480px;
   height: 25px;
+}
+
+details {
+  font-size: 20px;
+}
+
+.menu1 {
+  font-size: 20px;
+}
+
+.menu2 {
+  font-size: 20px;
 }
 
 .figure1{
@@ -78,39 +93,8 @@ figcaption{
   text-align: center;
 }
 
-#rayo {
-  border: 4px solid rgba(0,0,0,0);
-  border-bottom: 22px solid rgb(213, 58, 252);
-  transform: rotateZ(-160deg);
-  padding: 2px;
-  width: 0;
-  height: 0;
-  margin: 0;
-  overflow: visible;
-  border-top: 0 solid;
-  border-radius: 0;
-  transform-origin: 50% 50% 0;
-  }
-#rayo::after {
-  content:"";
-  top: -9px;
-  left: -8px;
-  border: 5px solid rgba(0,0,0,0);
-  border-bottom: 25px solid rgb(0, 255, 255);
-  transform: rotateZ(4deg);
-  padding: 0;
-  width: 0;
-  height: 0;
-  position: absolute;
-  margin: 0;
-  overflow: visible;
-  border-top: 0 solid;
-  border-radius: 0;
-  transform-origin: 50% 50% 0;
-}
-
-.menu {
-  font-size: 18px;
+.color {
+  font-size: 20px;
 }
 
 kbd > kbd {
