@@ -1,6 +1,10 @@
 body {
-    background-color: #9bd9f882;
-    font-family: Verdana;
+  
+  justify-content: center;
+  background-color: #9bd9f882;
+  font-family: Verdana;
+  align-items: center;
+  min-height: 100vh;
 }
   
 h1 {
@@ -9,6 +13,52 @@ h1 {
   margin: 15px 0 15px 0;
   color: #06368f;
   font-size: 70px;
+}
+
+nav {
+  margin: 0 auto;
+  position: relative;
+  width: 535px;
+  height: 50px;
+  background: #222;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  padding: 0 30px;
+  z-index: 1;
+}
+nav span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(90deg, #d2f400, #768802);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+nav a:nth-child(1):hover~span{
+  left: 0px;
+}
+nav a:nth-child(2):hover~span{
+  left: 99px;
+}
+nav a:nth-child(3):hover~span{
+  left: 200px;
+}
+nav a:nth-child(4):hover~span{
+  left: 318px;
+}
+nav a:nth-child(5):hover~span{
+  left: 440px;
 }
 
 .bannerHeader {
@@ -42,15 +92,8 @@ details {
   font-size: 20px;
 }
 
-.menu1 {
-  font-size: 20px;
-}
-
-.menu2 {
-  font-size: 20px;
-}
-
 .figure1{
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   padding: 5px;
@@ -59,6 +102,7 @@ details {
 }
 
 .figure2{
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   padding: 5px;
