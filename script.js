@@ -18,7 +18,7 @@
 
 //FUNCIÓN PARA SABER EL NUMERO DE CATEGORÍA DISPONIBLES
 function numeroItems() {
-  let numEl = document.getElementsByClassName("seleccion");
+  let numEl = document.querySelectorAll(".seleccion");
   let resultP = document.querySelector("p.result");
   resultP.innerHTML = "Hay " + numEl.length + " Categorías entre ropa deportiva y accesorios";
 }  
