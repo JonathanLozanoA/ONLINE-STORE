@@ -1,36 +1,30 @@
 body {
   
   justify-content: center;
-  background-color: #9bd9f882;
+  background-color: #75CFFC;
   font-family: Verdana;
   align-items: center;
   min-height: 100vh;
 }
   
-h1 {
-  text-align: center;
-  font-family: verdana;
-  margin: 15px 0 15px 0;
-  color: #06368f;
-  font-size: 70px;
-}
-
 section {
   margin: 0 auto;
   position: relative;
-  width: 535px;
+  width: 690px;
   height: 50px;
-  background: #222;
+  background: #DC0A2D;
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center; 
+  font-size: 18px; 
+  font-weight: bold;
 }
 section a {
   position: relative;
   display: inline-block;
   font-size: 1em;
-  color: white;
+  color: #d9d6d6;
   text-decoration: none;
   padding: 0 30px;
   z-index: 1;
@@ -41,7 +35,7 @@ section span{
   left: 0;
   width: 95px;
   height: 100%;
-  background: linear-gradient(90deg, #d2f400, #768802);
+  background: linear-gradient(90deg, #DC0A2D, #8C0821);
   border-radius: 10px;
   transition: 0.5s;
 }
@@ -49,30 +43,43 @@ section a:nth-child(1):hover~span{
   left: 0px;
 }
 section a:nth-child(2):hover~span{
-  left: 99px;
+  left: 160px;
 }
 section a:nth-child(3):hover~span{
-  left: 200px;
+  left: 308px;
 }
 section a:nth-child(4):hover~span{
-  left: 318px;
+  left: 458px;
 }
 section a:nth-child(5):hover~span{
-  left: 440px;
+  left: 594px;
 }
 
 .bannerHeader {
   margin: 0 auto;
-  padding: 5px 0 0 0;
+  padding: 0 0 50px 0;
   font-family: verdana;
   text-align: center;
-  border: solid 3px black;
-  border-radius: 50px;
-  color: #DFF5FF;
-  background-color: #30bc30;
-  font-size: 24px;
-  width: 1000px;
+  border: solid 9px rgb(0, 23, 121);
+  border-radius: 50px 50px 50px 50px;
+  color: #FFC400;
+  background-color: rgb(14, 50, 212);
+  font-size: 60px;
+  width: 570px;
   height: 35px;
+}
+
+article{
+  
+  display: flex;
+  flex-flow: space-around;
+  padding: 5px;
+  max-width: 375px;
+  margin: center;
+}
+
+#h1Pokemon {
+  font-size: 69px;
 }
 
 p {
@@ -83,7 +90,6 @@ p {
   color: #DFF5FF;
   background-color: #5356FF;
   font-size: 18px;
-  font-style: italic;
   width: 480px;
   height: 25px;
 }
@@ -92,40 +98,29 @@ details {
   font-size: 20px;
 }
 
-.figure1{
-  
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 375px;
-  margin: left;
-}
 
-.figure2{
-  
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 375px;
-  margin: right;
-}
   
 img {
   margin: 5px 0 5px 0;
 }
 
-.imgRopaCasual {
+.imgMapa {
   border: solid 2px;
-  border-radius: 100px 10px 10px 10px;
+  border-radius: 20px 20px 20px 20px;
   width: 375px;
   height: 250px;
 }
 
-.imgRopaAltoRendimiento {
+.imgLogistica {
   border: solid 2px;
-  border-radius: 10px 100px 10px 10px;
+  border-radius: 20px 20px 20px 20px;
+  width: 375px;
+  height: 250px;
+}
+
+.imgWeb {
+  border: solid 2px;
+  border-radius: 20px 20px 20px 20px;
   width: 375px;
   height: 250px;
 }

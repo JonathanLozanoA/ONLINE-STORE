@@ -2,66 +2,73 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
-    <title>MUNDO POKÉMON</title>
+    <title>POKÉMON GENERATION ONE</title>
     <link rel="stylesheet" href="HOME/style.css">
   </head>
   
   <body>
     <nav id="header">
-      <h1>MUNDO POKÉMON</h1> 
-      <p class="bannerHeader">Prendas sport casuales y de alto rendimiento para todas las actividades fisicas</p>
+      <h1 class="bannerHeader"><span id="h1Pokemon">Pokémon</span> ONE</h1> 
     </nav>
     <hr />
     <section class="new">
       <a href="">Home</a>
-      <a href="COMBATES/index.html" target=" blank">Combates</a>
-      <a href="PELICULAS/index.html" target=" blank">Peliculas</a>
-      <a href="CATALOGO/index.html" target=" blank">Catálogo</a>
+      <a href="POKESHOP/index.html" target=" parent">PokeShop</a>
+      <a href="FIGHTS/index.html" target=" self">PokePlay</a>
+      <a href="POKETFLIX/index.html" target=" top">PoketFlix</a>
       <a href="">Contact</a>
       <span></span>
     </section>
 
-    <h2>LO QUE TENEMOS PARA TI:</h2>
+    <article id="imgHome">
+      <figure class="figure2">
+        <img class="imgLogistica" src="HOME/IMG/logistica-envios.png"/>
+        <figcaption>Contamos con la mejor Logística de envíos</figcaption>
+      </figure>
+      
+      <figure class="figure1">
+        <img class="imgMapa" src="HOME/IMG/mapa-de-kanto.png"/>
+        <figcaption>Llegamos a toda la Región de Kanto y más</figcaption>
+      </figure>
+      
+      <figure class="figure2">
+        <img class="imgWeb" src="HOME/IMG/plataforma-pokemon.png"/>
+        <figcaption>Encuentra aquí todo sobre la 1ra Generación de Pokémon</figcaption>
+      </figure>
+    </article>
+
+    <h2>Lo que tenemos para tí:</h2>
     
-      <details><summary>PRENDAS SPORT CASUALES</summary>
+      <details><summary>En la PokeShop</summary>
         <ul>
-          <input type="radio" name="seleccion1" class="seleccion" id="bicicleteros"/>
-          <label for="bicicleteros"><u>Bicicleteros</u></label>
+          <input type="radio" name="seleccion1" class="seleccion" id="coleccionables"/>
+          <label for="coleccionables"><u>Coleccionables</u></label>
           <br>
-          <input type="radio" name="seleccion1" class="seleccion" id="pantalonetas"/>
-          <label for="pantalonetas"><u>Pantalonetas</u></label>
+          <input type="radio" name="seleccion1" class="seleccion" id="ropa"/>
+          <label for="ropa"><u>Ropa & Acc</u></label>
           <br>
-          <input type="radio" name="seleccion1" class="seleccion" id="buzos"/>
-          <label for="buzos"><u>Buzos y Camisetas</u></label>
+          <input type="radio" name="seleccion1" class="seleccion" id="fanart"/>
+          <label for="fanart"><u>Fan-art</u></label>
         </ul>
       </details> 
     
     <br>
     
-      <details><summary>PRENDAS DE ALTO RENDIMIENTO</summary>
+      <details><summary>En la PokePlay</summary>
         <ul>
           <input type="radio" name="seleccion2" class="seleccion" id="chaquetas"/>
-          <label for="chaquetas"><u>Chaquetas Deportivas</u></label>
-          <br>
-          <input type="radio" name="seleccion2" class="seleccion" id="hombres"/>
-          <label for="hombres"><u>Licras para Hombres</u></label>
-          <br>
-          <input type="radio" name="seleccion2" class="seleccion" id="mujeres"/>
-          <label for="mujeres"><u>Licras para Mujeres</u></label>
+          <label for="chaquetas"><u>Combates Pokémon</u></label>
         </ul>
-      </details>
+      </details> 
     
-
-    <!-- FOTOS DEL HOME GENERADAS POR IA-->
-    <figure class="figure1">
-      <img class="imgRopaCasual" src="https://st3.depositphotos.com/9880800/14298/i/450/depositphotos_142987593-stock-photo-sporty-men-and-women.jpg"/>
-      <figcaption>Prendas Sport Casuales</figcaption>
-    </figure>
-
-    <figure class="figure2">
-      <img class="imgRopaAltoRendimiento" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/03/156047-ropa-deportiva-inteligente.jpg" alt="Deportistas usando prendas fitness"/>
-      <figcaption>Prendas de Alto Rendimiento</figcaption>
-    </figure>
+      <br>
+      
+        <details><summary>En la PoketFlix</summary>
+          <ul>
+            <input type="radio" name="seleccion2" class="seleccion" id="peliculas"/>
+            <label for="peliculas"><u>Peliculas Pokémon</u></label>
+          </ul>
+        </details>
 
     <!-- BOTONES QUE CAMBIAN LAS IMAGENES DEL HOME Y SU PROPIO TEXTO -->
     <button onClick="ropaSport()" id="ropaSport">Comprar Ropa Sport Casual</button>
