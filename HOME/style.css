@@ -1,5 +1,4 @@
 body {
-  
   justify-content: center;
   background-color: #75CFFC;
   font-family: Verdana;
@@ -8,18 +7,19 @@ body {
 }
   
 section {
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
-  width: 690px;
+  width: 710px;
   height: 50px;
   background: #DC0A2D;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center; 
   font-size: 18px; 
   font-weight: bold;
 }
+
 section a {
   position: relative;
   display: inline-block;
@@ -29,6 +29,7 @@ section a {
   padding: 0 30px;
   z-index: 1;
 }
+
 section span{
   position: absolute;
   top: 0;
@@ -36,27 +37,32 @@ section span{
   width: 95px;
   height: 100%;
   background: linear-gradient(90deg, #DC0A2D, #8C0821);
-  border-radius: 10px;
+  border-radius: 20px;
   transition: 0.5s;
 }
+
 section a:nth-child(1):hover~span{
-  left: 0px;
+  left: 15px;
 }
+
 section a:nth-child(2):hover~span{
-  left: 160px;
+  left: 165px;
 }
+
 section a:nth-child(3):hover~span{
-  left: 308px;
+  left: 330px;
 }
+
 section a:nth-child(4):hover~span{
-  left: 458px;
+  left: 475px;
 }
+
 section a:nth-child(5):hover~span{
-  left: 594px;
+  left: 615px;
 }
 
 .bannerHeader {
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 0 50px 0;
   font-family: verdana;
   text-align: center;
@@ -64,22 +70,23 @@ section a:nth-child(5):hover~span{
   border-radius: 50px 50px 50px 50px;
   color: #FFC400;
   background-color: rgb(14, 50, 212);
-  font-size: 60px;
-  width: 570px;
+  font-size: 69px;
+  font-style: italic;
+  width: 400px;
   height: 35px;
 }
 
 article{
-  
-  display: flex;
+  display:inline-flex;
   flex-flow: space-around;
-  padding: 5px;
+  padding: 10px;
   max-width: 375px;
   margin: center;
 }
 
 #h1Pokemon {
   font-size: 69px;
+  font-style: normal;
 }
 
 p {
@@ -97,39 +104,36 @@ p {
 details {
   font-size: 20px;
 }
-
-
-  
+ 
 img {
   margin: 5px 0 5px 0;
+  text-align: center;
 }
 
 .imgMapa {
-  border: solid 2px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 0px 0px;
   width: 375px;
   height: 250px;
+
 }
 
 .imgLogistica {
-  border: solid 2px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 0px 0px;
   width: 375px;
   height: 250px;
 }
 
 .imgWeb {
-  border: solid 2px;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 0px 0px;
   width: 375px;
   height: 250px;
 }
 
 figcaption{
-  background-color: #222;
-  color: #fff;
-  font: smaller sans-serif;
-  border-radius: 5px 5px 5px 5px;
+  background-color: #DC0A2D;
+  color: #d9d6d6;
+  font: medium sans-serif;
+  border-radius: 0px 0px 20px 20px;
   padding: 3px;
   text-align: center;
 }
