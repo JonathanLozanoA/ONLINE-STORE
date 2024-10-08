@@ -1,6 +1,6 @@
 body {
   justify-content: center;
-  background-color: #75CFFC;
+  background-color: #e8e8e8;
   font-family: Verdana;
   align-items: center;
   min-height: 100vh;
@@ -66,13 +66,13 @@ section a:nth-child(5):hover~span{
   padding: 0 0 50px 0;
   font-family: verdana;
   text-align: center;
-  border: solid 9px rgb(0, 23, 121);
+  border: solid 9px #1C2B59;
   border-radius: 50px 50px 50px 50px;
   color: #FFC400;
-  background-color: rgb(14, 50, 212);
+  background-color: #3365A6;
   font-size: 69px;
   font-style: italic;
-  width: 400px;
+  width: 250px;
   height: 35px;
 }
 
